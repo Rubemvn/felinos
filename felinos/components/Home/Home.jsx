@@ -10,6 +10,7 @@ import {
 import iconMember from "@/public/images/icons/iconMemberBlue.svg";
 import instagram from "@/public/images/icons/instagram icon.svg";
 import facebook from "@/public/images/icons/facebook icon.svg";
+import cellPhones from "@/public/images/images/CELULARES.png";
 
 const Home = () => {
 	return (
@@ -42,7 +43,7 @@ const Home = () => {
 						</div>
 					</Texts>
 					<ImageCell
-						// src={}
+						src={cellPhones}
 						alt='2 Celulares. O primeiro com imagem do Instagram do clube de debravadores e o outro com a logo marca do clube'></ImageCell>
 				</Content>
 			</Container>
