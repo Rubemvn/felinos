@@ -22,12 +22,13 @@ body{
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
+  font-family: 'Montserrat';
 }
 
 *, button, input {
   border: 1;
   outline: 0;
-  font-family: 'Montserrat', 'Roboto';
+  font-family: 'Montserrat';
 }
 
 button {
