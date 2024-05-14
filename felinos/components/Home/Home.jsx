@@ -11,6 +11,7 @@ import iconMember from "@/public/images/icons/iconMemberBlue.svg";
 import instagram from "@/public/images/icons/instagram icon.svg";
 import facebook from "@/public/images/icons/facebook icon.svg";
 import cellPhones from "@/public/images/images/CELULARES.png";
+import Link from "next/link";
 
 const Home = () => {
 	return (
@@ -22,24 +23,34 @@ const Home = () => {
 						<p>
 							Desde de 2001 salvando crianças e adolescentes do pecado e
 							guiando-as no serviço a Deus e a comunidade. Nossa missão é
-							espalhar a mensagem do advento a todo o mundo em noss geração!
+							espalhar a mensagem do advento em todo o mundo em nossa geração!
 						</p>
 						<div>
-							<Button>
-								SEJA SÓCIO{" "}
-								<IconMember
-									src={iconMember}
-									alt='icone de carteira'
+							<Link href='#member'>
+								<Button>
+									SEJA SÓCIO
+									<IconMember
+										src={iconMember}
+										alt='icone de carteira'
+									/>
+								</Button>
+							</Link>
+							<Link
+								href='https://www.instagram.com/felinos.dbv'
+								target='_blank'>
+								<IconSocialMedia
+									src={instagram}
+									alt='Logo tipo do instagram'
 								/>
-							</Button>
-							<IconSocialMedia
-								src={instagram}
-								alt='Logo tipo do instagram'
-							/>
-							<IconSocialMedia
-								src={facebook}
-								alt='Logo tipo do facebook'
-							/>
+							</Link>
+							<Link
+								href='https://www.instagram.com/felinos.dbv'
+								target='_blank'>
+								<IconSocialMedia
+									src={facebook}
+									alt='Logo tipo do facebook'
+								/>
+							</Link>
 						</div>
 					</Texts>
 					<ImageCell
