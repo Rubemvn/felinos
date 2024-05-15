@@ -40,7 +40,7 @@ export const History = styled.div`
 	top: 0;
 	left: 0;
 	width: 73rem;
-	height: 39.3rem;
+	height: 50%;
 	background-color: ${(props) => props.theme.colors.secondary};
 	border-radius: 1.5rem;
 	padding: 0 2.4rem 2.4rem 0;
@@ -127,7 +127,8 @@ export const ImageCarousel = styled.div`
 `;
 
 export const WhatWeDo = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -135,10 +136,11 @@ export const WhatWeDo = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	width: 119rem;
-	height: 40rem;
+	height: 51%;
 
 	background-color: ${(props) => props.theme.colors.tertiary};
 	border-radius: 1.5rem;
+	z-index: 3;
 `;
 
 export const SubtitlesIcons = styled(Image)`

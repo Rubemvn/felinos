@@ -7,6 +7,9 @@ export const metadata = {
 	title: "Clube de Desbravadores Felinos",
 	description:
 		"Somos o clube de desbravadores Felinos. Nosso objetivo é salvar crianças e adolescentes de 10 a 15 anos do pecado e guia-las no serviço a Deus e a comunidade.",
+	icons: {
+		icon: ["/images/images/FELINOS.svg"],
+	},
 };
 
 export default function RootLayout({ children }) {

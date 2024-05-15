@@ -66,12 +66,13 @@ const AboutUs = () => {
 								<h3>O papel do Clube</h3>
 							</div>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. It has
-								survived not only five centuries, but also the leap into
-								electronic typesetting.
+								Os clube de desbravadores desempenha um papel fundamental na
+								vida das crianças, adolescentes e na comunidade. Oferece um
+								ambiente seguro e educativo, onde os juvenis podem desenvolver
+								habilidades sociais, físicas, mentais e espirituais. Prepara os
+								membros para uma vida de propósito, responsabilidade e
+								liderança, ensinando-os a serem resilientes e comprometidos com
+								Deus e com o bem-estar da sociedade.
 							</p>
 						</TextSection>
 						<TextSection>
