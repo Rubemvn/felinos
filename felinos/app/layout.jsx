@@ -1,7 +1,13 @@
 import { Montserrat } from "next/font/google";
 import StyledComponentsRegistry from "./registry";
 import GlobalStyles from "@/styles/GlobalStyles";
-const montserrat = Montserrat({ subsets: ["latin"] });
+
+const montserrat = Montserrat({
+	weight: ["400", "500", "600", "700", "800", "900"],
+	style: ["normal", "italic"],
+	display: "swap",
+	subsets: ["latin"],
+});
 
 export const metadata = {
 	title: "Clube de Desbravadores Felinos",
