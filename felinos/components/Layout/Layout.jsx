@@ -15,7 +15,7 @@ const Layout = () => {
 				<Content />
 				<Footer />
 			</Grid>
-			<Mixer />
+			{/* <Mixer /> */}
 		</ThemeProvider>
 	);
 };
