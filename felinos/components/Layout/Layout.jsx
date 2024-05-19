@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import { Grid } from "./styles";
 import theme from "@/styles/theme";
+import Mixer from "../Mixer/Mixer";
 
 const Layout = () => {
 	return (
@@ -14,6 +15,7 @@ const Layout = () => {
 				<Content />
 				<Footer />
 			</Grid>
+			<Mixer />
 		</ThemeProvider>
 	);
 };
