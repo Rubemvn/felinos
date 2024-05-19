@@ -1,17 +1,22 @@
+import Image from "next/image";
 import {
 	Container,
 	Content,
 	Feedback,
 	FeedbacksContent,
+	Profile,
 	TextContent,
 	Title,
 } from "./styles";
+import profile from "@/public/images/images/profile 1.png";
 
 const TheClub = () => {
 	return (
 		<Container id='theClub'>
 			<Title>
-				NÃO SE CONTRÓI UM <b>CLUBE</b> SOZINHO
+				NÃO SE CONSTRÓI UM
+				<br />
+				GRANDE <b>CLUBE</b> SOZINHO
 			</Title>
 			<Content>
 				<TextContent>
@@ -30,10 +35,10 @@ const TheClub = () => {
 					</p>
 				</TextContent>
 				<FeedbacksContent>
-					<Feedback className='one'>
+					<Feedback>
 						<div className='title'>
-							<img
-								src=''
+							<Profile
+								src={profile}
 								alt='Perfil'
 							/>
 							<div className='texts'>
@@ -41,7 +46,7 @@ const TheClub = () => {
 								<small>Desbravador desde 2012</small>
 							</div>
 						</div>
-						<div className='feedbackText'>
+						<div className='feedbackText one'>
 							<p>
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
@@ -49,10 +54,10 @@ const TheClub = () => {
 							</p>
 						</div>
 					</Feedback>
-					<Feedback className='one'>
+					<Feedback>
 						<div className='title'>
-							<img
-								src=''
+							<Profile
+								src={profile}
 								alt='Perfil'
 							/>
 							<div className='texts'>
@@ -60,7 +65,7 @@ const TheClub = () => {
 								<small>Desbravador desde 2012</small>
 							</div>
 						</div>
-						<div className='feedbackText'>
+						<div className='feedbackText two'>
 							<p>
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
@@ -68,10 +73,10 @@ const TheClub = () => {
 							</p>
 						</div>
 					</Feedback>
-					<Feedback className='one'>
+					<Feedback>
 						<div className='title'>
-							<img
-								src=''
+							<Profile
+								src={profile}
 								alt='Perfil'
 							/>
 							<div className='texts'>
@@ -79,7 +84,7 @@ const TheClub = () => {
 								<small>Desbravador desde 2012</small>
 							</div>
 						</div>
-						<div className='feedbackText'>
+						<div className='feedbackText three'>
 							<p>
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
