@@ -10,7 +10,18 @@ export default {
 		gray: "#bfbfbf",
 		graySecondary: "#313131",
 
-		sucess: "#03BB85",
+		gold01: "#F0A81D",
+		gold02: "#6B4700",
+
+		goldPlus01: "#14F15F",
+		goldPlus02: "#005A1F",
+
+		platinum01: "#FFFFFF",
+		platinum02: "#393939",
+		platinum03: "#CECECE",
+
+		black01: "#141414",
+
 		info: "#3B5998",
 		warning: "#E44C4E",
 	},

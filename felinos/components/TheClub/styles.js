@@ -32,6 +32,9 @@ width:130rem;
 grid-template-columns: repeat(2, 1fr);
 border-radius: 1.5rem;
 overflow: hidden;
+-webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
+box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1);
 `
 
 export const TextContent = styled.div`
@@ -43,6 +46,10 @@ p {
   text-align: center;
   color: ${(props) => props.theme.colors.white};
 }
+
+-webkit-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.15);
+box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.15);
 `
 
 export const FeedbacksContent = styled.div`
