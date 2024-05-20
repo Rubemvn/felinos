@@ -4,7 +4,7 @@ import { Button, IconMember } from "./styles";
 import iconMember from "@/public/images/icons/iconMember.svg";
 import iconMemberBlue from "@/public/images/icons/iconMemberBlue.svg"; // Alterado para ícone azul
 
-const MemberButton = ({ text }) => {
+const MemberButton = ({ text, scale }) => {
 	const [icon, setIcon] = useState(iconMember);
 
 	const handleMouseOver = () => {
@@ -18,7 +18,8 @@ const MemberButton = ({ text }) => {
 	return (
 		<Button
 			onMouseOver={handleMouseOver}
-			onMouseOut={handleMouseOut}>
+			onMouseOut={handleMouseOut}
+			scale={scale}>
 			<p>{text}</p>
 			<IconMember
 				src={icon}

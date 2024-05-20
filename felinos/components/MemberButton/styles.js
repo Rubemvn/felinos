@@ -22,6 +22,7 @@ export const Button = styled.button`
 	align-items: center;
 	gap: 1.3rem;
 	background: none;
+	scale: ${(props) => (props.scale ? props.scale : 1)};
 
 	.bgButton {
 		display: flex;

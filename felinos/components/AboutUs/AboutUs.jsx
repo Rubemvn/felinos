@@ -35,13 +35,12 @@ const AboutUs = () => {
 								<h3>Resumo da nossa História</h3>
 							</div>
 							<p>
-								A Jornada do clube Felinos já dura duas décadas, o Clube de
-								Desbravadores Felinos nasceu com um sonho audacioso: impactar
-								vidas e formar líderes. Ao longo dos anos enfrentamos desafios,
-								participamos de aventuras emocionantes e vimos muitos deixarem
-								sua marca. Nosso objetivo “Salvar do pecado e guiar no serviço”
-								nos guia, e nosso compromisso com Deus e com a comunidade
-								permanece firme.
+								Nossa jornada já dura duas décadas! O Clube de Desbravadores
+								Felinos nasceu com um sonho audacioso: impactar vidas e formar
+								líderes. Ao longo dos anos enfrentamos desafios, participamos de
+								aventuras emocionantes e vimos muitos deixarem sua marca. Nosso
+								objetivo “Salvar do pecado e guiar no serviço” nos guia e nosso
+								compromisso com Deus e com a comunidade permanece firme.
 							</p>
 						</TextSection>
 					</History>
@@ -66,13 +65,13 @@ const AboutUs = () => {
 								<h3>O papel do Clube</h3>
 							</div>
 							<p>
-								Os clube de desbravadores desempenha um papel fundamental na
-								vida das crianças, adolescentes e na comunidade. Oferece um
-								ambiente seguro e educativo, onde os juvenis podem desenvolver
-								habilidades sociais, físicas, mentais e espirituais. Prepara os
-								membros para uma vida de propósito, responsabilidade e
-								liderança, ensinando-os a serem resilientes e comprometidos com
-								Deus e com o bem-estar da sociedade.
+								O clube de desbravadores desempenha um papel fundamental na vida
+								das crianças, adolescentes e na comunidade. Oferece um ambiente
+								seguro e educativo, onde habilidades sociais, físicas, mentais e
+								espirituais são desenvolvidas. Prepara os membros para uma vida
+								de propósito, responsabilidade e liderança, ensinando-os a serem
+								resilientes e comprometidos com Deus e com o bem-estar da
+								sociedade.
 							</p>
 						</TextSection>
 						<TextSection>

@@ -14,7 +14,8 @@ import {
 	Unidades,
 } from "./styles";
 import { FaLocationDot } from "react-icons/fa6";
-import { IoIosMail, IoLogoWhatsapp, IoLogoInstagram } from "react-icons/io";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoIosMail, IoLogoWhatsapp } from "react-icons/io";
 import { IoLogoFacebook } from "react-icons/io5";
 
 import felinos from "@/public/images/images/FELINOS.svg";
@@ -73,14 +74,17 @@ const Footer = () => {
 							<Link href='#home'>Home</Link>
 						</li>
 						<li>
-							<Link href='#aboutUs'>Quem Somos?</Link>
+							<Link href='#aboutUS'>Quem Somos?</Link>
 						</li>
 						<li>
 							<Link href='#contact'>Contate-nos</Link>
 						</li>
 						<li>
 							<Link href='#member'>
-								<MemberButton text='SEJA SÓCIO' />{" "}
+								<MemberButton
+									text='SEJA SÓCIO'
+									scale='1.4'
+								/>{" "}
 							</Link>
 						</li>
 					</ul>
@@ -88,27 +92,27 @@ const Footer = () => {
 
 				<Contact id='contact'>
 					<ContactLink
-						href=''
+						href='https://maps.app.goo.gl/g7R9sB6rrfMACCsZ9'
 						target='_blank'>
 						Nossa localização <FaLocationDot />
 					</ContactLink>
 					<ContactLink
-						href=''
+						href='mailto:felinos.mpi@gmail.com'
 						target='_blank'>
 						felinos.mpi@gmail.com <IoIosMail />
 					</ContactLink>
 					<ContactLink
-						href=''
+						href='https://wa.me/5586999332609'
 						target='_blank'>
 						86 99933-2609 <IoLogoWhatsapp />
 					</ContactLink>
 					<ContactLink
-						href=''
+						href='https://www.instagram.com/felinos.dbv'
 						target='_blank'>
-						@felinos.dbv <IoLogoInstagram />
+						@felinos.dbv <RiInstagramFill />
 					</ContactLink>
 					<ContactLink
-						href=''
+						href='https://www.facebook.com/dbvfelinos2017?mibextid=ZbWKwL'
 						target='_blank'>
 						Clube Felinos <IoLogoFacebook />
 					</ContactLink>
