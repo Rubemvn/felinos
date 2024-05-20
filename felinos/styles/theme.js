@@ -22,7 +22,7 @@ export default {
 
 		black01: "#141414",
 
-		info: "#3B5998",
-		warning: "#E44C4E",
+		info: "#060E3D",
+		textInfo: "#343B65",
 	},
 };
