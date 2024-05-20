@@ -15,7 +15,7 @@ const NavBar = () => {
 				</LinkBar>
 				<List>
 					<li>
-						<LinkBar href='#home'>Hom</LinkBar>
+						<LinkBar href='#home'>Home</LinkBar>
 					</li>
 					<li>
 						<LinkBar href='#aboutUS'>Quem somos?</LinkBar>
