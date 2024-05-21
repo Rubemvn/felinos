@@ -72,7 +72,7 @@ const AboutUs = () => {
 								de propósito, responsabilidade e liderança, ensinando-os a serem
 								resilientes e comprometidos com Deus e com o bem-estar da
 								sociedade.
-							</p>
+							</p>{" "}
 						</TextSection>
 						<TextSection>
 							<div className='title'>
