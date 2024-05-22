@@ -25,7 +25,7 @@ const Home = () => {
 							guiando-as no serviço a Deus e a comunidade. Nossa missão é
 							espalhar a mensagem do advento em todo o mundo em nossa geração!
 						</p>
-						<div>
+						<div className='links'>
 							<Link href='#member'>
 								<Button>
 									SEJA SÓCIO
@@ -35,25 +35,28 @@ const Home = () => {
 									/>
 								</Button>
 							</Link>
-							<Link
-								href='https://www.instagram.com/felinos.dbv'
-								target='_blank'>
-								<IconSocialMedia
-									src={instagram}
-									alt='Logo tipo do instagram'
-								/>
-							</Link>
-							<Link
-								href='https://www.instagram.com/felinos.dbv'
-								target='_blank'>
-								<IconSocialMedia
-									src={facebook}
-									alt='Logo tipo do facebook'
-								/>
-							</Link>
+							<div>
+								<Link
+									href='https://www.instagram.com/felinos.dbv'
+									target='_blank'>
+									<IconSocialMedia
+										src={instagram}
+										alt='Logo tipo do instagram'
+									/>
+								</Link>
+								<Link
+									href='https://www.instagram.com/felinos.dbv'
+									target='_blank'>
+									<IconSocialMedia
+										src={facebook}
+										alt='Logo tipo do facebook'
+									/>
+								</Link>
+							</div>
 						</div>
 					</Texts>
 					<ImageCell
+						priority
 						src={cellPhones}
 						alt='2 Celulares. O primeiro com imagem do Instagram do clube de debravadores e o outro com a logo marca do clube'></ImageCell>
 				</Content>

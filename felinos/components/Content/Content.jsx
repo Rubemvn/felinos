@@ -9,9 +9,9 @@ const Content = () => {
 	return (
 		<Container>
 			<Home />
-			{/* <AboutUs />
+			<AboutUs />
 			<TheClub />
-			<Member /> */}
+			<Member />
 		</Container>
 	);
 };
