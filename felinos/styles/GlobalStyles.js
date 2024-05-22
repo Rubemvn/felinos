@@ -2,8 +2,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/montserrat.ttf') format('truetype');
@@ -75,7 +75,7 @@ export default createGlobalStyle`
   src: url('/fonts/montserrat-italic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
-} */
+}
 
 
 
