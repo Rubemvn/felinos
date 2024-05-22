@@ -8,8 +8,8 @@ export const Container = styled.section`
 	align-items: center;
 	height: 100vh;
 	top: 0;
-
 	width: 100%;
+
 	background-image: url("/images/images/bg-home.jpg");
 	background-clip: border-box;
 	background-size: cover;
@@ -22,8 +22,22 @@ export const Content = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 80%;
+	/* width: 80%; */
 	max-width: 158rem;
+
+	@media ${({ theme }) => theme.device.laptopL} {
+		justify-content: space-around;
+
+		/* width: 90%; */
+	}
+
+	@media (max-width: 1150px) {
+		justify-content: center;
+	}
+
+	@media ${({ theme }) => theme.device.laptop} {
+		justify-content: space-around;
+	}
 `;
 
 export const Texts = styled.div`
@@ -58,6 +72,39 @@ export const Texts = styled.div`
 			scale: 1.04;
 		}
 	}
+
+	@media ${({ theme }) => theme.device.laptopL} {
+		h1 {
+			font-size: 4rem;
+			width: 50rem;
+		}
+		p {
+			font-size: 2rem;
+			width: 50rem;
+		}
+	}
+
+	/* @media (max-width: 1150px) {
+		h1 {
+			font-size: 3.5rem;
+			width: 45rem;
+		}
+		p {
+			font-size: 1.8rem;
+			width: 45rem;
+		}
+	} */
+
+	@media ${({ theme }) => theme.device.laptop} {
+		h1 {
+			font-size: 3rem;
+			width: 37rem;
+		}
+		p {
+			font-size: 1.6rem;
+			width: 37rem;
+		}
+	}
 `;
 
 const balance = keyframes`
@@ -66,17 +113,16 @@ const balance = keyframes`
       transform: rotate(1deg);
   }
   50%{
-      transform: rotate(0deg);
+		transform: rotate(0deg);
   }
   75%{
-      transform: rotate(-1deg);
+		transform: rotate(-1deg);
   }
   100%{
-      transform: rotate(0deg);
+		transform: rotate(0deg);
   }
   
   `;
-
 
 export const Button = styled.button`
 	display: flex;
@@ -114,23 +160,15 @@ export const IconSocialMedia = styled(Image)``;
 export const ImageCell = styled(Image)`
 	height: 60rem;
 	width: auto;
+	@media ${({ theme }) => theme.device.laptopL} {
+		height: 50rem;
+	}
+
+	@media (max-width: 1150px) {
+		height: 45rem;
+	}
+
+	@media ${({ theme }) => theme.device.laptop} {
+		height: 35rem;
+	}
 `;
-
-
-width:
-mobileS: '320px'
-mobileM: '375px'
-mobileL: '425px'
-tablet: '768px'
-laptop: '1024px'
-laptopL: '1440px'
-desktop: '2560px'
-
-height:
-mobileS:
-mobileM:
-mobileL:
-tablet:
-laptop:
-laptopL:
-desktop:

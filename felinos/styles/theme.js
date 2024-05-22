@@ -1,12 +1,12 @@
 const size = {
-	mobileS: '320px',
-	mobileM: '375px',
-	mobileL: '425px',
-	tablet: '768px',
-	laptop: '1024px',
-	laptopL: '1440px',
-	desktop: '2560px'
-}
+	mobileS: "320px",
+	mobileM: "375px",
+	mobileL: "425px",
+	tablet: "768px",
+	laptop: "1024px",
+	laptopL: "1440px",
+	desktop: "2560px",
+};
 
 const device = {
 	mobileS: `(max-width: ${size.mobileS})`,
@@ -15,8 +15,8 @@ const device = {
 	tablet: `(max-width: ${size.tablet})`,
 	laptop: `(max-width: ${size.laptop})`,
 	laptopL: `(max-width: ${size.laptopL})`,
-	desktop: `(max-width: ${size.desktop})`
-}
+	desktop: `(max-width: ${size.desktop})`,
+};
 
 export default {
 	colors: {
@@ -44,26 +44,7 @@ export default {
 
 		info: "#060E3D",
 		textInfo: "#343B65",
-
 	},
 
-	device
+	device,
 };
-
-// Width(largura)
-// - Mobile pequeno(Mobile S): 320px
-// - Mobile médio(Mobile M): 375px
-// - Mobile grande(Mobile L): 425px
-// - Tablet: 768px
-// - Laptop: 1024px
-// - Laptop grande(Laptop L): 1440px
-// - Desktop: 2560px
-
-// Height(altura)
-// - Mobile pequeno(Mobile S): 568px
-// - Mobile médio(Mobile M): 667px
-// - Mobile grande(Mobile L): 812px
-// - Tablet: 1024px
-// - Laptop: 768px
-// - Laptop grande(Laptop L): 900px
-// - Desktop: 1440px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  er

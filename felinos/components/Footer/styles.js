@@ -10,6 +10,9 @@ export const Container = styled.footer`
 	justify-content: end;
 	align-items: center;
 	flex-direction: column;
+
+	@media screen {
+	}
 `;
 
 export const Content = styled.div`

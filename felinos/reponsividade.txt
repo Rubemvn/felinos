@@ -1,0 +1,18 @@
+
+Width(largura)
+- Mobile pequeno(Mobile S): 320px
+- Mobile médio(Mobile M): 375px
+- Mobile grande(Mobile L): 425px
+- Tablet: 768px
+- Laptop: 1024px
+- Laptop grande(Laptop L): 1440px
+- Desktop: 2560px
+
+Height(altura)
+- Mobile pequeno(Mobile S): 568px
+- Mobile médio(Mobile M): 667px
+- Mobile grande(Mobile L): 812px
+- Tablet: 1024px
+- Laptop: 768px
+- Laptop grande(Laptop L): 900px
+- Desktop: 1440px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  er
