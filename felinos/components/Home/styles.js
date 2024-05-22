@@ -115,3 +115,22 @@ export const ImageCell = styled(Image)`
 	height: 60rem;
 	width: auto;
 `;
+
+
+width:
+mobileS: '320px'
+mobileM: '375px'
+mobileL: '425px'
+tablet: '768px'
+laptop: '1024px'
+laptopL: '1440px'
+desktop: '2560px'
+
+height:
+mobileS:
+mobileM:
+mobileL:
+tablet:
+laptop:
+laptopL:
+desktop:
