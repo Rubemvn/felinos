@@ -12,12 +12,16 @@ export const Container = styled.section`
 
 export const Content = styled.div`
 	height: 100vh;
-	width: 135rem;
+	width: 80%;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
+	@media ${({ theme }) => theme.device.laptopL} {
+		width: 90%;
+	}
 `;
 
 export const Title = styled.h2`
@@ -27,33 +31,32 @@ export const Title = styled.h2`
 `;
 
 export const Boxes = styled.div`
-	display: flex;
+	display: grid;
 	width: 100%;
 	height: calc(100% - (7.8rem + 6rem));
 	box-sizing: border-box;
 	position: relative;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"HT IM"
+		"WD WD";
 `;
 
 export const History = styled.div`
 	display: flex;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 73rem;
-	height: 50%;
+	grid-area: HT;
 	background-color: ${(props) => props.theme.colors.secondary};
-	border-radius: 1.5rem;
-	padding: 0 2.4rem 2.4rem 0;
 `;
 
 export const TextSection = styled.div`
 	color: ${(props) => props.theme.colors.white};
-	padding: 2.5rem;
 	display: flex;
-	/* justify-content: center; */
-	/* align-items: center; */
 	flex-direction: column;
 	gap: 1rem;
+	padding: 2rem;
 
 	.title {
 		display: flex;
@@ -77,16 +80,9 @@ export const ImageCarousel = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 64.6rem;
-	height: 38.5rem;
-	margin-top: 0.8rem;
-	padding-bottom: 2rem;
+	grid-area: IM;
 
 	background-color: ${(props) => props.theme.colors.white};
-	border-radius: 1.5rem;
 
 	img {
 		height: 34rem;
@@ -110,6 +106,12 @@ export const ImageCarousel = styled.div`
 			width: auto;
 		}
 		margin: 0 0.5rem;
+
+		@media ${({ theme }) => theme.device.laptopL} {
+			img {
+				width: 30rem;
+			}
+		}
 	}
 
 	.left {
@@ -127,19 +129,11 @@ export const ImageCarousel = styled.div`
 `;
 
 export const WhatWeDo = styled.div`
+	grid-area: WD;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 119rem;
-	height: 51%;
 
 	background-color: ${(props) => props.theme.colors.tertiary};
-	border-radius: 1.5rem;
 	z-index: 3;
 `;
 

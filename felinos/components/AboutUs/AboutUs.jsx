@@ -37,7 +37,9 @@ const AboutUs = () => {
 							<p>
 								Nossa jornada já dura duas décadas! O Clube de Desbravadores
 								Felinos nasceu com um sonho audacioso: impactar vidas e formar
-								líderes. Ao longo dos anos enfrentamos desafios, participamos de
+								líderes.
+								<br />
+								Ao longo dos anos enfrentamos desafios, participamos de
 								aventuras emocionantes e vimos muitos deixarem sua marca. Nosso
 								objetivo “Salvar do pecado e guiar no serviço” nos guia e nosso
 								compromisso com Deus e com a comunidade permanece firme.
