@@ -15,7 +15,7 @@ export const Button = styled.button`
 	color: ${(props) => props.theme.colors.secondary};
 	border-radius: 1rem;
 	border: solid 0.3rem ${(props) => props.theme.colors.secondary};
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	gap: 1.3rem;
@@ -57,5 +57,10 @@ export const Button = styled.button`
 			z-index: 1;
 		}
 	}
+
+
+@media ${({ theme }) => theme.device.laptop} {
+  display: ${({ display }) => display ? "none" : ("flex")};
+}
 `;
 

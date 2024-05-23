@@ -1,8 +1,12 @@
+import { useState } from "react";
 import MemberButton from "../MemberButton/MemberButton";
-import { Container, Bar, Logo, List, LinkBar } from "./styles";
+import { Container, Bar, Logo, List, LinkBar, MenuHamburger } from "./styles";
 import logo from "@/public/images/images/FELINOS.svg";
+import MemberButton2 from "../MemberButton-2/MemberButton-2";
 
 const NavBar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<Container>
 			<Bar>
@@ -13,7 +17,18 @@ const NavBar = () => {
 						priority={true}
 					/>
 				</LinkBar>
-				<List>
+				<MemberButton2
+					display={isOpen}
+					text=''
+					scale='1.2'
+				/>
+				<MenuHamburger
+					onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}>
+					<div className='line1'></div>
+					<div className='line2'></div>
+					{/* <div className='line3'></div> */}
+				</MenuHamburger>
+				<List display={isOpen}>
 					<li>
 						<LinkBar href='#home'>Home</LinkBar>
 					</li>
@@ -25,7 +40,7 @@ const NavBar = () => {
 					</li>
 					<li>
 						<LinkBar href='#member'>
-							<MemberButton text='SEJA SÓCIO' />{" "}
+							<MemberButton text='SEJA SÓCIO' />
 						</LinkBar>
 					</li>
 				</List>
