@@ -100,6 +100,10 @@ body{
   width: 100%;
   height: 100vh;
   font-family: 'Montserrat';
+
+  @media (max-width: 1024px){
+		overflow: ${({ isMenuOpen }) => (isMenuOpen ? "hidden" : "auto")};
+	}
 }
 
 *, button, input {
