@@ -28,11 +28,13 @@ const NavBar = () => {
 						priority={true}
 					/>
 				</LinkBar>
-				<MemberButton2
-					display={isOpen}
-					text=''
-					scale='1.05'
-				/>
+				<LinkBar href='#member'>
+					<MemberButton2
+						display={isOpen}
+						text=''
+						scale='1.05'
+					/>
+				</LinkBar>
 				<MenuHamburger
 					onClick={handleClick}
 					isOpen={isOpen}>

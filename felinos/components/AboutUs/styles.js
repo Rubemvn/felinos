@@ -8,6 +8,10 @@ export const Container = styled.section`
 	align-items: center;
 	padding: 3rem 0;
 	height: 100vh;
+	@media ${({ theme }) => theme.device.laptopL} {
+		height: auto;
+		padding: 2rem 0;
+}
 `;
 
 export const Content = styled.div`
@@ -21,6 +25,13 @@ export const Content = styled.div`
 
 	@media ${({ theme }) => theme.device.laptopL} {
 		width: 90%;
+		height: auto;
+	}
+	@media ${({ theme }) => theme.device.laptop} {
+		width: 90%;
+	}
+	@media ${({ theme }) => theme.device.mobile} {
+		width: 95%;
 	}
 `;
 
@@ -28,6 +39,16 @@ export const Title = styled.h2`
 	color: ${(props) => props.theme.colors.white};
 	text-align: center;
 	font-size: 6.4rem;
+	
+	@media ${({ theme }) => theme.device.laptop} {
+		font-size: 5.5rem;
+	}		
+	@media ${({ theme }) => theme.device.tablet} {
+		font-size: 4.5rem;
+	}		
+	@media ${({ theme }) => theme.device.mobileL} {
+		font-size: 4rem;
+	}		
 `;
 
 export const Boxes = styled.div`
@@ -43,6 +64,15 @@ export const Boxes = styled.div`
 	grid-template-areas:
 		"HT IM"
 		"WD WD";
+		
+	@media ${({ theme }) => theme.device.laptop} {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"HT"
+			"IM"
+			"WD";
+	}
 `;
 
 export const History = styled.div`
@@ -74,6 +104,27 @@ export const TextSection = styled.div`
 		font-weight: 500;
 		text-align: justify;
 	}
+
+	@media ${({ theme }) => theme.device.laptopL} {
+		h3{
+			font-size: 3rem;
+		}
+
+		p{
+			font-size: 2rem;
+		}
+	}
+	
+	@media ${({ theme }) => theme.device.laptop} {
+		h3{
+			font-size: 2.6rem;
+		}
+		
+		p{
+			font-size: 1.8rem;
+		}
+		
+	}
 `;
 
 export const ImageCarousel = styled.div`
@@ -81,10 +132,11 @@ export const ImageCarousel = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	grid-area: IM;
+	padding: 1.5rem;
 
 	background-color: ${(props) => props.theme.colors.white};
 
-	img {
+	.imgFelinos {
 		height: 34rem;
 		width: auto;
 	}
@@ -97,7 +149,6 @@ export const ImageCarousel = styled.div`
 		padding: 1.5rem;
 		background: none;
 		border: none;
-		font-size: 7rem;
 
 		transition: all 0.3s ease;
 
@@ -107,13 +158,8 @@ export const ImageCarousel = styled.div`
 		}
 		margin: 0 0.5rem;
 
-		@media ${({ theme }) => theme.device.laptopL} {
-			img {
-				width: 30rem;
-			}
-		}
 	}
-
+	
 	.left {
 		&:hover {
 			transform: translateX(-1rem);
@@ -126,18 +172,78 @@ export const ImageCarousel = styled.div`
 			margin: 0;
 		}
 	}
-`;
+	
+	@media ${({ theme }) => theme.device.laptopL} {
+		.imgFelinos {
+			height: 95%;
+			width: 100%;
+		}
+	}
+	@media ${({ theme }) => theme.device.laptop} {
+		
+		.imgFelinos {
+			/* height: 20rem; */
+		}
+		.left,
+		.right {
+		padding: 1rem 0;
+
+			img{
+				height: 3rem;
+			}
+		}
+	}
+	
+	@media ${({ theme }) => theme.device.mobileL} {
+		.imgFelinos {
+			height: 20rem;
+			width: auto;
+		}
+		.left,
+		.right {
+			img{
+				height: 2.5rem;
+			}
+		}
+	}
+	@media ${({ theme }) => theme.device.mobileM} {
+		.imgFelinos {
+			height: 17rem;
+		}
+	}
+	@media ${({ theme }) => theme.device.mobileM} {
+		.imgFelinos {
+			height: 15rem;
+		}
+	}
+
+	`;
 
 export const WhatWeDo = styled.div`
 	grid-area: WD;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-
+	
 	background-color: ${(props) => props.theme.colors.tertiary};
 	z-index: 3;
-`;
+
+	@media ${({ theme }) => theme.device.tablet}{
+		grid-template-columns: repeat(1, 2fr);
+		
+	}
+	`;
 
 export const SubtitlesIcons = styled(Image)`
 	width: 4rem;
 	height: auto;
+	@media ${({ theme }) => theme.device.laptopL}{
+		width: 3.5rem;
+	}
+	@media ${({ theme }) => theme.device.laptop}{
+		width: 3.2rem;
+	}
+	@media ${({ theme }) => theme.device.tablet}{
+		width: 3.0rem;
+	}
+
 `;
