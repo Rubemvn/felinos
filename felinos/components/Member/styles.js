@@ -7,16 +7,16 @@ justify-content: flex-start;
 flex-direction: column;
 align-items: center;
 width: 100%;
-height: 100vh;
+height: auto;
+min-height: 100vh;
 
 background-image: url("/images/images/bg-member.png");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-clip: border-box;
-padding: 3rem 0;
-gap: 3rem;
-
+padding: 1rem 0;
+gap: 1rem;
 `
 
 export const Title = styled.div`
@@ -37,23 +37,57 @@ h2{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 650px){
+  h2{
+    font-size: 5rem;
+  }
+  img{
+    width: 8rem;
+  }
+}
+@media ${({ theme }) => theme.device.mobileL}{
+  h2{
+    font-size: 4rem;
+  }
+  img{
+    width: 7rem;
+  }
+}
+    
 `
 
 export const Content = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 2rem;
-width: 80%;
+width: 90%;
 height: 100%;
+
+@media (max-width: 1300px){
+  width: 70%;
+  grid-template-columns: repeat(2, 2fr);
+}
+@media ${({ theme }) => theme.device.laptop}{
+  width: 85%;
+}
+@media ${({ theme }) => theme.device.tablet}{
+  width: 90%;
+}
+@media (max-width: 650px){
+  width: 80%;
+  grid-template-columns: repeat(1, 4fr);
+}
+@media ${({ theme }) => theme.device.mobileL}{
+  width: 90%;
+}
 
 `
 
 export const Plan = styled.div`
 display: flex;
-position: relative;
-justify-content: start;
+justify-content: space-between;
 align-items: center;
-padding: 1.5rem;
 border-radius: 1rem;
 overflow: hidden;
 height: 100%;
@@ -69,10 +103,6 @@ color:${(props) => (props.setPlan === "gold") ?
       (props.setPlan === "platinum" ? props.theme.colors.platinum02 :
         props.theme.colors.white))};
         
-h3{
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}
 
 -webkit-box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.25);
@@ -86,13 +116,42 @@ display: flex;
 flex-direction: column;
 width: 100%;
 padding: 0 1rem;
+padding: 1.5rem 2rem;
 list-style: none;
+
+h3{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 li{
   font-size: 2.6rem;
   font-weight: 500;
 }
 
+@media ${({ theme }) => theme.device.laptopL} {
+  h3{
+    font-size: 4rem;
+  }
+  li{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1300px){
+  h3{
+    font-size: 4.5rem;
+  }
+  li{
+    font-size: 2.3rem;
+  }
+}
+@media ${({ theme }) => theme.device.mobileL}{
+  li{
+    font-size: 2rem;
+  }
+  
+}
 `
 
 export const toSwing = keyframes`
@@ -126,8 +185,7 @@ height: 6rem;
 display: flex;
 justify-content: center;
 align-items: center;
-width: calc(100% - 4rem);
-margin: 2rem 0;
+width: 100%;
 text-decoration: none;
 
 transition: scale 0.2s ease;
@@ -143,34 +201,53 @@ transition: scale 0.2s ease;
 `
 
 export const Price = styled.div`
-position: absolute;
-bottom: 0;
-left: 0;
 width: 100%;
+padding: 1.5rem;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 3rem;
 background-color: ${(props) => (props.setColor === "black") ?
     props.theme.colors.black01 :
     (props.setColor === "platinum" ? props.theme.colors.platinum03 :
       props.theme.colors.white)};
     
 img{
-  margin-top: -4rem;
+  margin-top: -5rem;
+  height: 8rem;
+  width: auto;
 }
 
 h4{
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 p{
-  line-height: 1rem;
   font-size: 3rem;
   font-weight: 600;
   font-style: italic;
+  text-align: right;
   width: 100%;
-  text-align: end;
-  margin-right: 10rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+@media ${({ theme }) => theme.device.laptopL} {
+  h4{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2.4rem;
+  }
+  img{
+    height: 7rem;
+    width: auto;
+  }
+}
+@media (max-width: 1300px){
+  h4{
+    font-size: 4.5rem;
+  }
 }
 
 `

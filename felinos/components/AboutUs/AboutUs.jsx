@@ -49,7 +49,10 @@ const AboutUs = () => {
 						<button className='left'>
 							<Image src={arrowLeft} />
 						</button>
-						<Image src={photoClub} />
+						<Image
+							className='imgFelinos'
+							src={photoClub}
+						/>
 						<button className='right'>
 							<Image src={arrowRight} />
 						</button>

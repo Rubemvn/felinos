@@ -29,8 +29,8 @@ const Member = () => {
 			</Title>
 			<Content>
 				<Plan setPlan='gold'>
-					<h3>GOLD</h3>
 					<List>
+						<h3>GOLD</h3>
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
@@ -39,8 +39,10 @@ const Member = () => {
 					</List>
 					<Price setColor='gold'>
 						<Image src={medalGold} />
-						<h4>R$ 20,00</h4>
-						<p>por mês</p>
+						<div className='price'>
+							<h4>R$ 20,00</h4>
+							<p>por mês</p>
+						</div>
 						<ButtonSign
 							setColor='gold'
 							href='https://chk.eduzz.com/2379172'
@@ -51,8 +53,8 @@ const Member = () => {
 				</Plan>
 
 				<Plan setPlan='gold+'>
-					<h3>GOLD+</h3>
 					<List>
+						<h3>GOLD+</h3>
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
@@ -62,8 +64,10 @@ const Member = () => {
 					</List>
 					<Price setColor='gold+'>
 						<Image src={medalGoldPlus} />
-						<h4>R$ 30,00</h4>
-						<p>por mês</p>
+						<div className='price'>
+							<h4>R$ 30,00</h4>
+							<p>por mês</p>
+						</div>
 						<ButtonSign
 							setColor='gold+'
 							href='https://chk.eduzz.com/2379172'
@@ -74,8 +78,8 @@ const Member = () => {
 				</Plan>
 
 				<Plan setPlan='platinum'>
-					<h3>PLATINUM</h3>
 					<List>
+						<h3>PLATINUM</h3>
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
@@ -87,8 +91,10 @@ const Member = () => {
 					</List>
 					<Price setColor='platinum'>
 						<Image src={medalPlatinum} />
-						<h4>R$ 50,00</h4>
-						<p>por mês</p>
+						<div className='price'>
+							<h4>R$ 50,00</h4>
+							<p>por mês</p>
+						</div>
 						<ButtonSign
 							setColor='platinum'
 							href='https://chk.eduzz.com/2379172'
@@ -99,8 +105,8 @@ const Member = () => {
 				</Plan>
 
 				<Plan setPlan='black'>
-					<h3>BLACK</h3>
 					<List>
+						<h3>BLACK</h3>
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
@@ -115,8 +121,10 @@ const Member = () => {
 					</List>
 					<Price setColor='black'>
 						<Image src={medalBlack} />
-						<h4>R$ 100,00</h4>
-						<p>por mês</p>
+						<div className='price'>
+							<h4>R$ 100,00</h4>
+							<p>por mês</p>
+						</div>
 						<ButtonSign
 							setColor='black'
 							href='https://chk.eduzz.com/2379172'
