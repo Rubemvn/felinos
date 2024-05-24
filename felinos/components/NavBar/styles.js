@@ -98,7 +98,7 @@ export const MenuHamburger = styled.div`
 	}
 	.line2 {
 		width: 100%;
-		transition: width 0.9s linear;
+		/* transition: width 0.9s linear; */
 	}
 	.line1,
 	.line2 {
@@ -116,13 +116,13 @@ export const MenuHamburger = styled.div`
 		height: 5rem;
 		z-index: 3;
 		.line2 {
-			transition: transform 0.2s linear;
+			transition: transform 0.5s cubic-bezier(0.04, 0.23, 0.11, 0.9);
 			transform-origin: center;
 			transform: rotate(${({ isOpen }) => (isOpen ? "-45deg" : "none")})
 				translateY(${({ isOpen }) => (isOpen ? "-17.5px" : "0px")});
 		}
 		.line1 {
-			transition: transform 0.2s linear;
+			transition: transform 0.5s cubic-bezier(0.04, 0.23, 0.11, 0.9);
 			transform-origin: center;
 			transform: rotate(${({ isOpen }) => (isOpen ? "45deg" : "none")})
 				translateY(${({ isOpen }) => (isOpen ? "17.5px" : "0px")});
