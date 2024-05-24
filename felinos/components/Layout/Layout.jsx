@@ -13,7 +13,7 @@ const Layout = () => {
 			<Grid>
 				<NavBar />
 				<Content />
-				{/* <Footer /> */}
+				<Footer />
 			</Grid>
 			{/* <Mixer /> */}
 		</ThemeProvider>

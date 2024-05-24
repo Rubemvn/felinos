@@ -45,6 +45,10 @@ export const Content = styled.div`
 		flex-direction: column-reverse;
 		width: 80%;
 	}
+	@media (max-width: 530px) {
+		margin-top: 5%;
+	}
+	
 	@media ${({ theme }) => theme.device.mobileL} {
 		width: 100%;
 	}
@@ -110,7 +114,7 @@ export const Texts = styled.div`
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-
+		
 		h1 {
 			font-size: 4rem;
 			width: 50rem;
@@ -121,7 +125,7 @@ export const Texts = styled.div`
 			width: 50rem;
 		}
 	}
-
+	
 	@media (max-width: 530px) {
 		h1 {
 			font-size: 3rem;
@@ -145,6 +149,10 @@ export const Texts = styled.div`
 	}
 
 	@media ${({ theme }) => theme.device.mobileM} {
+		h1{
+			font-size: 2.6rem;
+
+		}
 		h1,
 		p {
 			width: 30rem;
@@ -160,7 +168,6 @@ export const Texts = styled.div`
 
 	@media ${({ theme }) => theme.device.mobileS} {
 		h1 {
-			font-size: 2.6rem;
 			width: 100%;
 			padding: 0 1rem;
 		}
@@ -237,20 +244,22 @@ export const ImageCell = styled(Image)`
 		width: 35rem;
 	}
 
-	@media ${({ theme }) => theme.device.tablet} {
-		width: 45rem;
-	}
-	@media (max-height: 750px) {
-		max-width: 40rem;
-	}
 	@media (max-width: 530px) {
-		width: 40rem;
-	}
-	@media ${({ theme }) => theme.device.mobileL} {
 		width: 35rem;
 	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		width: 30rem;
+		@media (max-height: 750px) {
+			max-width: 30rem;
+		}
+		@media (max-height: 600px) {
+			max-width: 25rem;
+		}
+		@media (max-height: 530px) {
+			/* width: 20rem; */
+		}
+	}
 	@media ${({ theme }) => theme.device.mobileM} {
-		width: 100%;
 		padding: 0 2rem;
 	}
 	@media ${({ theme }) => theme.device.mobileS} {

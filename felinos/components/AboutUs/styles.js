@@ -8,6 +8,7 @@ export const Container = styled.section`
 	align-items: center;
 	padding: 3rem 0;
 	height: 100vh;
+	width: 100%;
 	@media ${({ theme }) => theme.device.laptopL} {
 		height: auto;
 		padding: 2rem 0;
@@ -24,13 +25,13 @@ export const Content = styled.div`
 	flex-direction: column;
 
 	@media ${({ theme }) => theme.device.laptopL} {
-		width: 90%;
 		height: auto;
 	}
 	@media ${({ theme }) => theme.device.laptop} {
 		width: 90%;
+		height: auto;
 	}
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.mobileL} {
 		width: 95%;
 	}
 `;

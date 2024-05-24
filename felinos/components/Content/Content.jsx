@@ -10,8 +10,8 @@ const Content = () => {
 		<Container>
 			<Home />
 			<AboutUs />
-			{/* <TheClub /> */}
-			{/* <Member /> */}
+			<TheClub />
+			<Member />
 		</Container>
 	);
 };

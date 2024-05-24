@@ -2,8 +2,6 @@
 import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 import Link from "next/link";
-import theme from "@/styles/theme";
-import MemberButton from "../MemberButton/MemberButton";
 
 export const Container = styled.header`
 	color: white;

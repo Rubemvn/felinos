@@ -5,6 +5,10 @@ export const IconMember = styled(Image)`
 	z-index: 3;
 	width: 3.2rem;
 	height: auto;
+	@media ${({ theme }) => theme.device.mobileL} {
+	width: 2.8;
+
+}
 `;
 
 export const Button = styled.button`
@@ -22,6 +26,12 @@ export const Button = styled.button`
 	background: none;
 	padding: .7rem 2rem;
 	scale: ${(props) => (props.scale ? props.scale : 1)};
+	
+	@media ${({ theme }) => theme.device.mobileL} {
+		font-size: 1.6rem;
+		padding: .5rem 1.8rem;
+
+	}
 
 	.bgButton {
 		display: flex;

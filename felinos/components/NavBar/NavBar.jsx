@@ -19,7 +19,6 @@ const NavBar = () => {
 
 	return (
 		<Container>
-			<GlobalStyles isOpen={isOpen} />
 			<Bar>
 				<LinkBar href='/'>
 					<Logo
