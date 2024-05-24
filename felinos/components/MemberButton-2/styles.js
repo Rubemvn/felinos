@@ -5,10 +5,6 @@ export const IconMember = styled(Image)`
 	z-index: 3;
 	width: 3.2rem;
 	height: auto;
-	@media ${({ theme }) => theme.device.mobileL} {
-	width: 2.8;
-
-}
 `;
 
 export const Button = styled.button`
@@ -19,19 +15,13 @@ export const Button = styled.button`
 	color: ${(props) => props.theme.colors.secondary};
 	border-radius: 1rem;
 	border: solid 0.3rem ${(props) => props.theme.colors.secondary};
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	gap: 1.3rem;
 	background: none;
 	padding: .7rem 2rem;
 	scale: ${(props) => (props.scale ? props.scale : 1)};
-	
-	@media ${({ theme }) => theme.device.mobileL} {
-		font-size: 1.6rem;
-		padding: .5rem 1.8rem;
-
-	}
 
 	.bgButton {
 		display: flex;
@@ -67,5 +57,10 @@ export const Button = styled.button`
 			z-index: 1;
 		}
 	}
+
+
+@media ${({ theme }) => theme.device.laptop} {
+  display: ${({ display }) => display ? "none" : ("flex")};
+}
 `;
 
