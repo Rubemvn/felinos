@@ -70,7 +70,7 @@ const Member = () => {
 						</div>
 						<ButtonSign
 							setColor='gold+'
-							href='https://chk.eduzz.com/2379172'
+							href='https://chk.eduzz.com/2384620'
 							target='_blank'>
 							ASSINAR
 						</ButtonSign>
@@ -97,7 +97,7 @@ const Member = () => {
 						</div>
 						<ButtonSign
 							setColor='platinum'
-							href='https://chk.eduzz.com/2379172'
+							href='https://chk.eduzz.com/2384634'
 							target='_blank'>
 							ASSINAR
 						</ButtonSign>
@@ -127,7 +127,7 @@ const Member = () => {
 						</div>
 						<ButtonSign
 							setColor='black'
-							href='https://chk.eduzz.com/2379172'
+							href='https://chk.eduzz.com/2384657'
 							target='_blank'>
 							ASSINAR
 						</ButtonSign>
