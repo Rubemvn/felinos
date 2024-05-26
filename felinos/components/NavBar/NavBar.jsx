@@ -3,7 +3,6 @@ import MemberButton from "../MemberButton/MemberButton";
 import { Container, Bar, Logo, List, LinkBar, MenuHamburger } from "./styles";
 import logo from "@/public/images/images/FELINOS.svg";
 import MemberButton2 from "../MemberButton-2/MemberButton-2";
-import GlobalStyles from "@/styles/GlobalStyles";
 
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
