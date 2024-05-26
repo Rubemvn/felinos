@@ -90,7 +90,7 @@ justify-content: space-between;
 align-items: center;
 border-radius: 1rem;
 overflow: hidden;
-height: 100%;
+min-height: 41rem;
 flex-direction: column;
 background-color: ${(props) => (props.setPlan === "gold") ?
     props.theme.colors.gold01 :
@@ -138,6 +138,7 @@ li{
     font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 1300px){
   h3{
     font-size: 4.5rem;
