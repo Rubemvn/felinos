@@ -8,7 +8,9 @@ import {
 	TextContent,
 	Title,
 } from "./styles";
-import profile from "@/public/images/images/profile 1.png";
+import profile1 from "@/public/images/images/profile1.png";
+import profile2 from "@/public/images/images/profile2.png";
+import profile3 from "@/public/images/images/profile3.png";
 
 const TheClub = () => {
 	return (
@@ -38,57 +40,58 @@ const TheClub = () => {
 					<Feedback>
 						<div className='title'>
 							<Profile
-								src={profile}
+								src={profile1}
 								alt='Perfil'
 							/>
 							<div className='texts'>
-								<p>Rúbem Vieira</p>
-								<small>Desbravador desde 2012</small>
+								<p>Gerlane Barbosa</p>
+								<small>Mãe de desbravadoras</small>
 							</div>
 						</div>
 						<div className='feedbackText one'>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s.
+								"...O Clube tem uma enorme influência na vida das minhas filhas.
+								Se tem um compromisso que elas levam a sério é ir para o Clube
+								de Desbravadores (Felinos). O Clube ajuda tanto na vida terrena
+								como na eterna e é um importante aliado no relacionamento com os
+								pais..."
 							</p>
 						</div>
 					</Feedback>
 					<Feedback>
 						<div className='title'>
 							<Profile
-								src={profile}
+								src={profile2}
 								alt='Perfil'
 							/>
 							<div className='texts'>
-								<p>Rúbem Vieira</p>
-								<small>Desbravador desde 2012</small>
+								<p>Ana Maria</p>
+								<small>Desbravadora desde 2015</small>
 							</div>
 						</div>
 						<div className='feedbackText two'>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s.
+								"...foi a minha primeira oração, porque o clube falava de oração
+								nas meditações, e através disso eu tive uma aproximação maior
+								com Deus..."
 							</p>
 						</div>
 					</Feedback>
 					<Feedback>
 						<div className='title'>
 							<Profile
-								src={profile}
+								src={profile3}
 								alt='Perfil'
 							/>
 							<div className='texts'>
-								<p>Rúbem Vieira</p>
-								<small>Desbravador desde 2012</small>
+								<p>Miguel Arthur</p>
+								<small>Desbravador desde 2020</small>
 							</div>
 						</div>
 						<div className='feedbackText three'>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s.
+								"...No clube, há muitas atividades incríveis, mas minha favorita
+								é o campori, porque posso fazer novas amizades..."
 							</p>
 						</div>
 					</Feedback>
