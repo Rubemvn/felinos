@@ -90,7 +90,7 @@ justify-content: space-between;
 align-items: center;
 border-radius: 1rem;
 overflow: hidden;
-min-height: 41rem;
+min-height: 60rem;
 flex-direction: column;
 background-color: ${(props) => (props.setPlan === "gold") ?
     props.theme.colors.gold01 :
