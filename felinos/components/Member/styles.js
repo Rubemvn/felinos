@@ -38,7 +38,7 @@ h2{
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 650px){
+@media screen and (max-width: 650px){
   h2{
     font-size: 5rem;
   }
@@ -46,7 +46,7 @@ h2{
     width: 8rem;
   }
 }
-@media ${({ theme }) => theme.device.mobileL}{
+@media screen and (${({ theme }) => theme.device.mobileL}){
   h2{
     font-size: 4rem;
   }
@@ -64,21 +64,21 @@ gap: 2rem;
 width: 90%;
 height: 100%;
 
-@media (max-width: 1300px){
+@media screen and (max-width: 1300px){
   width: 70%;
   grid-template-columns: repeat(2, 2fr);
 }
-@media ${({ theme }) => theme.device.laptop}{
+@media screen and (${({ theme }) => theme.device.laptop}){
   width: 85%;
 }
-@media ${({ theme }) => theme.device.tablet}{
+@media screen and (${({ theme }) => theme.device.tablet}){
   width: 90%;
 }
-@media (max-width: 650px){
+@media screen and (max-width: 650px){
   width: 80%;
   grid-template-columns: repeat(1, 4fr);
 }
-@media ${({ theme }) => theme.device.mobileL}{
+@media screen and (${({ theme }) => theme.device.mobileL}){
   width: 90%;
 }
 
@@ -130,7 +130,7 @@ li{
   font-weight: 500;
 }
 
-@media ${({ theme }) => theme.device.laptopL} {
+@media screen and (${({ theme }) => theme.device.laptopL} ){
   h3{
     font-size: 4rem;
   }
@@ -138,7 +138,7 @@ li{
     font-size: 2rem;
   }
 }
-@media (max-width: 1300px){
+@media screen and (max-width: 1300px){
   h3{
     font-size: 4.5rem;
   }
@@ -146,7 +146,7 @@ li{
     font-size: 2.3rem;
   }
 }
-@media ${({ theme }) => theme.device.mobileL}{
+@media screen and (${({ theme }) => theme.device.mobileL}){
   li{
     font-size: 2rem;
   }
@@ -232,7 +232,7 @@ p{
   margin-bottom: 1rem;
 }
 
-@media ${({ theme }) => theme.device.laptopL} {
+@media screen and (${({ theme }) => theme.device.laptopL} ){
   h4{
     font-size: 4rem;
   }
@@ -244,7 +244,7 @@ p{
     width: auto;
   }
 }
-@media (max-width: 1300px){
+@media screen and (max-width: 1300px){
   h4{
     font-size: 4.5rem;
   }
