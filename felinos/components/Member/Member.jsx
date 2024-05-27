@@ -32,7 +32,7 @@ const Member = () => {
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
-						<li>• Nescessaire</li>
+						<li>• Necessaire</li>
 						<li>• Brindes</li>
 					</List>
 					<Price setColor='gold'>
@@ -56,7 +56,7 @@ const Member = () => {
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
-						<li>• Nescessaire</li>
+						<li>• Necessaire</li>
 						<li>• Caneca</li>
 						<li>• Brindes</li>
 					</List>
@@ -81,7 +81,7 @@ const Member = () => {
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
-						<li>• Nescessaire</li>
+						<li>• Necessaire</li>
 						<li>• Caneca</li>
 						<li>• Camisa</li>
 						<li>• Brindes</li>
@@ -108,7 +108,7 @@ const Member = () => {
 						<li>• Certificado</li>
 						<li>• Carteirinha</li>
 						<li>• Bucket</li>
-						<li>• Nescessaire</li>
+						<li>• Necessaire</li>
 						<li>• Caneca</li>
 						<li>• Camisa</li>
 						<li>• Squeeze térmica</li>
