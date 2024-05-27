@@ -5,7 +5,7 @@ export const IconMember = styled(Image)`
 	z-index: 3;
 	width: 3.2rem;
 	height: auto;
-	@media ${({ theme }) => theme.device.mobileL} {
+	@media screen and (${({ theme }) => theme.device.mobileL}) {
 	width: 2.8;
 
 }
@@ -27,7 +27,7 @@ export const Button = styled.button`
 	padding: .7rem 2rem;
 	scale: ${(props) => (props.scale ? props.scale : 1)};
 	
-	@media ${({ theme }) => theme.device.mobileL} {
+	@media screen and (${({ theme }) => theme.device.mobileL}) {
 		font-size: 1.6rem;
 		padding: .5rem 1.8rem;
 
@@ -41,7 +41,7 @@ export const Button = styled.button`
 		left: 0;
 		top: 0;
 		transition: all 0.5s ease;
-		background-color: ${(props) => props.theme.colors.secondary};
+		background-color: screen and (${(props) => props.theme.colors.secondary});
 	}
 
 	transition: all 0.5s ease;
@@ -52,7 +52,7 @@ export const Button = styled.button`
 
 	&:hover {
 		p {
-			color: ${(props) => props.theme.colors.primary};
+			color: screen and (${(props) => props.theme.colors.primary});
 			z-index: 2;
 		}
 
@@ -63,7 +63,7 @@ export const Button = styled.button`
 			left: 0;
 			height: 100%;
 			width: 100%;
-			background-color: ${(props) => props.theme.colors.secondary};
+			background-color: screen and (${(props) => props.theme.colors.secondary});
 			z-index: 1;
 		}
 	}

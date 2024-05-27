@@ -86,12 +86,15 @@ const AboutUs = () => {
 								<h3>Nossa Missão</h3>
 							</div>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. It has
-								survived not only five centuries, but also the leap into
-								electronic typesetting.
+								O Clube de Desbravadores busca criar um ambiente seguro e
+								acolhedor, onde jovens possam explorar talentos, superar
+								desafios e construir amizades. Com um programa dinâmico e
+								diversificado, que inclui acampamentos, caminhadas, competições,
+								oficinas e estudos bíblicos, o Clube visa fortalecer a fé, o
+								caráter e a cidadania dos membros. Nossa missão é inspirar
+								desbravadores a seguir um estilo de vida ativo, altruísta e
+								centrado em valores éticos e espirituais, contribuindo para um
+								mundo melhor.
 							</p>
 						</TextSection>
 					</WhatWeDo>

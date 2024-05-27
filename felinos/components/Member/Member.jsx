@@ -16,8 +16,6 @@ import medalPlatinum from "@/public/images/icons/platinum.svg";
 import medalBlack from "@/public/images/icons/black.svg";
 
 const Member = () => {
-	const handleSign = (url) => {};
-
 	return (
 		<Container id='member'>
 			<Title>

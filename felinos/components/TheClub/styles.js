@@ -232,6 +232,7 @@ box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.15);
 export const Profile = styled(Image)`
 width: 5.1rem;
 height: auto;
+border-radius: 50%;
 @media ${({ theme }) => theme.device.laptopL} {
   width: 4.5rem;
 }
